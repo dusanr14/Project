@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul  6 21:13:57 2022
+# Process ID: 7780
+# Current directory: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/synth_1
+# Command line: vivado.exe -log pivot_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pivot_wrapper.tcl
+# Log file: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/synth_1/pivot_wrapper.vds
+# Journal file: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source pivot_wrapper.tcl -notrace

@@ -1,0 +1,266 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 12944
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Jul 07 10:23:28 CEST 2022
+Time zone: 	Central European Standard Time (Europe/Prague)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 2
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	E:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	E:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Dusan
+User home directory: C:/Users/Dusan
+User working directory: C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/Xilinx/Vivado
+HDI_APPROOT: E:/Xilinx/Vivado/2020.2
+RDI_DATADIR: E:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: E:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Dusan/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Dusan/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Dusan/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	E:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/vivado.log
+Vivado journal file location: 	C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/vivado.jou
+Engine tmp dir: 	C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/.Xil/Vivado-12944-DESKTOP-QI02RAP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: E:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: E:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: E:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: E:/Xilinx/Vivado/2020.2
+XILINX_SDK: E:/Xilinx/Vitis/2020.2
+XILINX_VITIS: E:/Xilinx/Vitis/2020.2
+XILINX_VIVADO: E:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: E:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	165 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,131 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// WARNING: HEventQueue.dispatchEvent() is taking  1188 ms.
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 97 MB (+99233kb) [00:00:14]
+// [Engine Memory]: 1,131 MB (+1034091kb) [00:00:14]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Dusan\Desktop\vhdp_projekat\doPivoting\doPivoting.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/doPivoting.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,131 MB. GUI used memory: 61 MB. Current time: 7/7/22, 10:23:29 AM CEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 112 MB (+10567kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  7166 ms.
+// Tcl Message: open_project C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/doPivoting.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Dusan/Desktop/8_semestar/system_level/doPivoting' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:37 ; elapsed = 00:00:16 . Memory (MB): peak = 1126.340 ; gain = 0.000 
+// Project name: doPivoting; location: C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 133 MB (+16055kb) [00:00:39]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // D
+// PAPropertyPanels.initPanels (dopivoting_tb.vhd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, dopivoting_tb(Behavioral) (dopivoting_tb.vhd)]", 8, true); // D - Node
+// [GUI Memory]: 145 MB (+6125kb) [00:00:51]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, dopivoting_tb(Behavioral) (dopivoting_tb.vhd)]", 8, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ip_pivot(Behavioral) (ip_pivot.vhd)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ip_pivot(Behavioral) (ip_pivot.vhd), div : divider_32(Behavioral) (do_pivoting.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ip_pivot(Behavioral) (ip_pivot.vhd), div : divider_32(Behavioral) (do_pivoting.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, dopivoting_tb(Behavioral) (dopivoting_tb.vhd)]", 11, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, dopivoting_tb(Behavioral) (dopivoting_tb.vhd)]", 11, true, false, false, false, true, false); // D - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ah
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top dopivoting_tb [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// bz (cr):  Set as Top : addNotify
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Set as Top"); // bz
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// [GUI Memory]: 153 MB (+20kb) [00:01:33]
+// Elapsed time: 33 seconds
+selectCodeEditor("do_pivoting.vhd", 35, 304); // bP
+selectCodeEditor("do_pivoting.vhd", 405, 312); // bP
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dopivoting_tb.vhd", 1); // m
+// Elapsed time: 15 seconds
+selectCodeEditor("dopivoting_tb.vhd", 62, 76); // bP
+typeControlKey((HResource) null, "dopivoting_tb.vhd", 'v'); // bP
+selectCodeEditor("dopivoting_tb.vhd", 69, 74); // bP
+typeControlKey((HResource) null, "dopivoting_tb.vhd", 'v'); // bP
+selectCodeEditor("dopivoting_tb.vhd", 251, 77); // bP
+typeControlKey((HResource) null, "dopivoting_tb.vhd", 'v'); // bP
+// Elapsed time: 14 seconds
+selectCodeEditor("dopivoting_tb.vhd", 154, 96); // bP
+typeControlKey((HResource) null, "dopivoting_tb.vhd", 'v'); // bP
+selectCodeEditor("dopivoting_tb.vhd", 153, 73); // bP
+selectCodeEditor("dopivoting_tb.vhd", 241, 76); // bP
+selectCodeEditor("dopivoting_tb.vhd", 152, 93); // bP
+selectCodeEditor("dopivoting_tb.vhd", 300, 83); // bP
+selectCodeEditor("dopivoting_tb.vhd", 279, 99); // bP
+selectCodeEditor("dopivoting_tb.vhd", 148, 72); // bP
+selectCodeEditor("dopivoting_tb.vhd", 240, 69); // bP
+selectCodeEditor("dopivoting_tb.vhd", 282, 77); // bP
+selectCodeEditor("dopivoting_tb.vhd", 370, 77); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, dopivoting_tb(Behavioral) (dopivoting_tb.vhd), duv : divider_32(Behavioral) (do_pivoting.vhd), div : div_gen_0 (div_gen_0.xci)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, dopivoting_tb(Behavioral) (dopivoting_tb.vhd), duv : divider_32(Behavioral) (do_pivoting.vhd), div : div_gen_0 (div_gen_0.xci)]", 11, false, false, false, false, false, true); // D - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// N (cr):  Re-customize IP : addNotify
+// r (cr): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1784 ms.
+dismissDialog("Re-customize IP"); // N
+// Elapsed time: 86 seconds
+selectComboBox("Operand Sign (operand_sign)", "Unsigned", 0); // bY
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.operand_sign {Unsigned} CONFIG.latency {55}] [get_ips div_gen_0] 
+// aI (cr): Generate Output Products: addNotify
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// bz (cr):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/doPivoting.srcs/sources_1/ip/div_gen_0/div_gen_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'div_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'div_gen_0'... INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'div_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'div_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'div_gen_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all div_gen_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/doPivoting.srcs/sources_1/ip/div_gen_0/div_gen_0.xci] -no_script -sync -force -quiet 
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 161 MB (+749kb) [00:05:32]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run div_gen_0_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs div_gen_0_synth_1 -jobs 4 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jul  7 10:28:46 2022] Launched div_gen_0_synth_1... Run output will be captured here: C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/doPivoting.runs/div_gen_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+dismissDialog("Managing Output Products"); // bz
+selectButton("OptionPane.button", "OK"); // JButton
+selectCodeEditor("dopivoting_tb.vhd", 72, 374); // bP
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ak
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cr):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/doPivoting.sim/sim_1/behav/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/doPivoting.sim/sim_1/behav/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'dopivoting_tb' in fileset 'sim_1'... 
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... 
+// Tcl Message: INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dusan/Desktop/vhdp_projekat/doPivoting/doPivoting.sim/sim_1/behav/xsim' 

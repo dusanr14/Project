@@ -1,0 +1,1033 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul  6 17:55:58 2022
+# Process ID: 6548
+# Current directory: C:/Users/Dusan/Desktop/projekat_radi/divider/project_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3884 C:\Users\Dusan\Desktop\projekat_radi\divider\project_7\project_7.xpr
+# Log file: C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/vivado.log
+# Journal file: C:/Users/Dusan/Desktop/projekat_radi/divider/project_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/project_7.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Andrej/VHDL_projects/delitelj/najnoviji/project_7' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 1126.449 ; gain = 0.000
+update_compile_order -fileset sources_1
+create_peripheral xilinx.com user PIVOT 1.0 -dir C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:PIVOT:1.0]
+set_property VALUE 7 [ipx::get_bus_parameters WIZ_NUM_REG -of_objects [ipx::get_bus_interfaces S00_AXI -of_objects [ipx::find_open_core xilinx.com:user:PIVOT:1.0]]]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:PIVOT:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:PIVOT:1.0]
+set_property  ip_repo_paths  C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/../ip_repo/PIVOT_1.0 [current_project]
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0'.
+ipx::edit_ip_in_project -upgrade true -name edit_PIVOT_v1_0 -directory C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/../ip_repo c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 1126.449 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:11 . Memory (MB): peak = 1126.449 ; gain = 0.000
+update_compile_order -fileset sources_1
+add_files -norecurse -copy_to c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src {C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/project_7.srcs/sources_1/ip/div_gen_0/div_gen_0.xci C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/project_7.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}
+add_files: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1181.980 ; gain = 55.531
+add_files -norecurse -copy_to c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src {C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/project_7.srcs/sources_1/new/dsp.vhd C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/project_7.srcs/sources_1/new/ip_pivot.vhd C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/project_7.srcs/sources_1/new/top_pivot.vhd C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/project_7.srcs/sources_1/new/divider_32.vhd}
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: PIVOT_v1_0
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1690.445 ; gain = 247.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PIVOT_v1_0' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'PIVOT_v1_0_S00_AXI' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0_S00_AXI.vhd:5' bound to instance 'PIVOT_v1_0_S00_AXI_inst' of component 'PIVOT_v1_0_S00_AXI' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'PIVOT_v1_0_S00_AXI' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PIVOT_v1_0_S00_AXI' (1#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0_S00_AXI.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'PIVOT_v1_0' (2#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 1747.957 ; gain = 305.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1747.957 ; gain = 305.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1747.957 ; gain = 305.043
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1747.957 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1838.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:21 . Memory (MB): peak = 1965.707 ; gain = 522.793
+8 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:34 . Memory (MB): peak = 1965.707 ; gain = 783.727
+current_project project_7
+current_project edit_PIVOT_v1_0
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2056.195 ; gain = 64.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PIVOT_v1_0' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'PIVOT_v1_0_S00_AXI' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0_S00_AXI.vhd:5' bound to instance 'PIVOT_v1_0_S00_AXI_inst' of component 'PIVOT_v1_0_S00_AXI' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'PIVOT_v1_0_S00_AXI' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0_S00_AXI.vhd:94]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PIVOT_v1_0_S00_AXI' (1#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0_S00_AXI.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'PIVOT_v1_0' (2#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2083.852 ; gain = 92.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2101.695 ; gain = 109.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2101.695 ; gain = 109.906
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2110.910 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:22 . Memory (MB): peak = 2110.910 ; gain = 119.121
+update_compile_order -fileset sources_1
+generate_target all [get_files c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/div_gen_0/div_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'div_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'div_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'C Simulation' target for IP 'div_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'div_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'div_gen_0'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/div_gen_0/div_gen_0.xci]
+generate_target all [get_files c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'...
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs div_gen_0_synth_1
+[Wed Jul  6 18:24:28 2022] Launched div_gen_0_synth_1...
+Run output will be captured here: c:/users/dusan/desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/div_gen_0_synth_1/runme.log
+wait_on_run div_gen_0_synth_1
+[Wed Jul  6 18:24:28 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:24:33 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:24:38 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:24:43 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:24:53 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:25:03 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:25:14 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:25:24 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:25:44 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:26:04 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:26:24 2022] Waiting for div_gen_0_synth_1 to finish...
+[Wed Jul  6 18:26:44 2022] Waiting for div_gen_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log div_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source div_gen_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source div_gen_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1126.176 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top div_gen_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3896
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1153.980 ; gain = 27.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'div_gen_0' [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:71]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 57 - type: integer 
+	Parameter ALGORITHM_TYPE bound to: 1 - type: integer 
+	Parameter DIVISOR_WIDTH bound to: 32 - type: integer 
+	Parameter DIVIDEND_WIDTH bound to: 32 - type: integer 
+	Parameter SIGNED_B bound to: 1 - type: integer 
+	Parameter DIVCLK_SEL bound to: 1 - type: integer 
+	Parameter FRACTIONAL_B bound to: 1 - type: integer 
+	Parameter FRACTIONAL_WIDTH bound to: 21 - type: integer 
+	Parameter C_HAS_DIV_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVISOR_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_DIVISOR_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_S_AXIS_DIVIDEND_TLAST bound to: 0 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXIS_DIVIDEND_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_DOUT_TDATA_WIDTH bound to: 56 - type: integer 
+	Parameter C_M_AXIS_DOUT_TUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'div_gen_v5_1_17' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/div_gen_0/hdl/div_gen_v5_1_vh_rfs.vhd:13859' bound to instance 'U0' of component 'div_gen_v5_1_17' [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'div_gen_0' (12#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/div_gen_0/synth/div_gen_0.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 1291.941 ; gain = 165.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1291.941 ; gain = 165.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 1291.941 ; gain = 165.766
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.714 . Memory (MB): peak = 1291.941 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3498 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/div_gen_0/div_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/div_gen_0/div_gen_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/div_gen_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/div_gen_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1361.691 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.401 . Memory (MB): peak = 1377.004 ; gain = 15.312
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1377.004 ; gain = 250.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1377.004 ; gain = 250.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/div_gen_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1377.004 ; gain = 250.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:49 ; elapsed = 00:00:52 . Memory (MB): peak = 1377.004 ; gain = 250.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 1377.004 ; gain = 250.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1377.004 ; gain = 250.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 1377.004 ; gain = 250.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:22 . Memory (MB): peak = 1377.004 ; gain = 250.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1385.836 ; gain = 259.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1385.836 ; gain = 259.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 1385.836 ; gain = 259.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 1385.836 ; gain = 259.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 1385.836 ; gain = 259.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 1385.836 ; gain = 259.660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    30|
+|2     |LUT1    |   140|
+|3     |LUT2    |   189|
+|4     |LUT3    |  1695|
+|5     |MUXCY   |  1749|
+|6     |SRLC32E |     6|
+|7     |XORCY   |  1749|
+|8     |FDRE    |  5666|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:30 ; elapsed = 00:01:35 . Memory (MB): peak = 1385.836 ; gain = 259.660
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:25 . Memory (MB): peak = 1385.836 ; gain = 174.598
+Synthesis Optimization Complete : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1385.836 ; gain = 259.660
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.807 . Memory (MB): peak = 1385.836 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3528 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1426.066 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 477 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 477 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:51 ; elapsed = 00:01:58 . Memory (MB): peak = 1426.066 ; gain = 299.891
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/div_gen_0_synth_1/div_gen_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP div_gen_0, cache-ID = db3d6cd3e4f90a4a
+INFO: [Coretcl 2-1174] Renamed 473 cell refs.
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/div_gen_0_synth_1/div_gen_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file div_gen_0_utilization_synth.rpt -pb div_gen_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  6 18:27:04 2022...
+[Wed Jul  6 18:27:09 2022] div_gen_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:20 ; elapsed = 00:02:41 . Memory (MB): peak = 2163.414 ; gain = 0.000
+launch_runs blk_mem_gen_0_synth_1
+[Wed Jul  6 18:27:09 2022] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: c:/users/dusan/desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/blk_mem_gen_0_synth_1/runme.log
+wait_on_run blk_mem_gen_0_synth_1
+[Wed Jul  6 18:27:10 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:27:15 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:27:20 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:27:25 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+[Wed Jul  6 18:27:30 2022] Interrupt received
+
+*** Running vivado
+    with args -log blk_mem_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source blk_mem_gen_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1141.785 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top blk_mem_gen_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+wait_on_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:20 . Memory (MB): peak = 2163.414 ; gain = 0.000
+INFO: [Common 17-344] 'wait_on_run' was cancelled
+reset_run blk_mem_gen_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory c:/users/dusan/desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/blk_mem_gen_0_synth_1
+
+reset_run blk_mem_gen_0_synth_1
+launch_runs blk_mem_gen_0_synth_1
+[Wed Jul  6 18:27:58 2022] Launched blk_mem_gen_0_synth_1...
+Run output will be captured here: c:/users/dusan/desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/blk_mem_gen_0_synth_1/runme.log
+wait_on_run blk_mem_gen_0_synth_1
+[Wed Jul  6 18:27:59 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:28:04 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:28:09 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:28:14 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:28:24 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:28:34 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:28:44 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:28:54 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:29:14 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:29:34 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+[Wed Jul  6 18:29:55 2022] Waiting for blk_mem_gen_0_synth_1 to finish...
+
+*** Running vivado
+    with args -log blk_mem_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source blk_mem_gen_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1141.785 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top blk_mem_gen_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12292
+
+*** Running vivado
+    with args -log blk_mem_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source blk_mem_gen_0.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source blk_mem_gen_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1126.586 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top blk_mem_gen_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12484
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1152.418 ; gain = 25.832
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:76]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 2 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 5200 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 5200 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 5200 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 5200 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 13 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 1 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 6 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     15.902312 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/blk_mem_gen_0/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:249]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (11#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/blk_mem_gen_0/synth/blk_mem_gen_0.vhd:76]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 1459.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/blk_mem_gen_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/blk_mem_gen_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1459.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1459.125 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/blk_mem_gen_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:06 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               13 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:19 ; elapsed = 00:01:24 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT2     |     2|
+|2     |LUT3     |     6|
+|3     |LUT4     |    68|
+|4     |RAMB36E1 |     6|
+|6     |FDRE     |     8|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1459.125 ; gain = 332.539
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:01:24 . Memory (MB): peak = 1459.125 ; gain = 332.539
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:30 . Memory (MB): peak = 1459.125 ; gain = 332.539
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1459.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1459.125 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:44 . Memory (MB): peak = 1459.125 ; gain = 332.539
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP blk_mem_gen_0, cache-ID = 40113a4c0de60062
+INFO: [Coretcl 2-1174] Renamed 20 cell refs.
+INFO: [Common 17-1381] The checkpoint 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file blk_mem_gen_0_utilization_synth.rpt -pb blk_mem_gen_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  6 18:30:08 2022...
+[Wed Jul  6 18:30:10 2022] blk_mem_gen_0_synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:30 ; elapsed = 00:02:11 . Memory (MB): peak = 2168.445 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2168.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PIVOT_v1_0' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:49]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'PIVOT_v1_0_S00_AXI' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0_S00_AXI.vhd:5' bound to instance 'PIVOT_v1_0_S00_AXI_inst' of component 'PIVOT_v1_0_S00_AXI' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'PIVOT_v1_0_S00_AXI' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0_S00_AXI.vhd:94]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PIVOT_v1_0_S00_AXI' (1#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0_S00_AXI.vhd:94]
+INFO: [Synth 8-3491] module 'top_pivot' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/top_pivot.vhd:35' bound to instance 'pivot_ins' of component 'top_pivot' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'top_pivot' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/top_pivot.vhd:48]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/.Xil/Vivado-6548-DESKTOP-QI02RAP/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'bram' of component 'blk_mem_gen_0' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/top_pivot.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/.Xil/Vivado-6548-DESKTOP-QI02RAP/realtime/blk_mem_gen_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'ip_pivot' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:38' bound to instance 'ip_core' of component 'ip_pivot' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/top_pivot.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'ip_pivot' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:63]
+	Parameter COLSIZE bound to: 101 - type: integer 
+	Parameter ROWSIZE bound to: 51 - type: integer 
+INFO: [Synth 8-3491] module 'divider_32' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/divider_32.vhd:35' bound to instance 'div' of component 'divider_32' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'divider_32' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/divider_32.vhd:46]
+INFO: [Synth 8-3491] module 'div_gen_0' declared at 'C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/.Xil/Vivado-6548-DESKTOP-QI02RAP/realtime/div_gen_0_stub.vhdl:5' bound to instance 'div' of component 'div_gen_0' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/divider_32.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'div_gen_0' [C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/.Xil/Vivado-6548-DESKTOP-QI02RAP/realtime/div_gen_0_stub.vhdl:18]
+INFO: [Synth 8-256] done synthesizing module 'divider_32' (2#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/divider_32.vhd:46]
+WARNING: [Synth 8-5640] Port 'mult_o' is missing in component declaration [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:75]
+	Parameter WIDTHA bound to: 32 - type: integer 
+	Parameter WIDTHB bound to: 32 - type: integer 
+	Parameter SIGNED_UNSIGNED bound to: signed - type: string 
+INFO: [Synth 8-3491] module 'dsp' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/dsp.vhd:13' bound to instance 'dsp1' of component 'dsp' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'dsp' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/dsp.vhd:24]
+	Parameter WIDTHA bound to: 32 - type: integer 
+	Parameter WIDTHB bound to: 32 - type: integer 
+	Parameter SIGNED_UNSIGNED bound to: signed - type: string 
+INFO: [Synth 8-256] done synthesizing module 'dsp' (3#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/dsp.vhd:24]
+WARNING: [Synth 8-5640] Port 'mult_o' is missing in component declaration [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:75]
+	Parameter WIDTHA bound to: 32 - type: integer 
+	Parameter WIDTHB bound to: 32 - type: integer 
+	Parameter SIGNED_UNSIGNED bound to: signed - type: string 
+INFO: [Synth 8-3491] module 'dsp' declared at 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/dsp.vhd:13' bound to instance 'dsp2' of component 'dsp' [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:163]
+WARNING: [Synth 8-614] signal 'addr1_reg_100' is read in the process but is not in the sensitivity list [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:248]
+WARNING: [Synth 8-614] signal 'res_o_s_1' is read in the process but is not in the sensitivity list [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:248]
+WARNING: [Synth 8-614] signal 'res_o_s_2' is read in the process but is not in the sensitivity list [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:248]
+INFO: [Synth 8-256] done synthesizing module 'ip_pivot' (4#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/ip_pivot.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'top_pivot' (5#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/src/top_pivot.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'PIVOT_v1_0' (6#1) [c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/hdl/PIVOT_v1_0.vhd:49]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2207.223 ; gain = 38.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2231.020 ; gain = 62.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2231.020 ; gain = 62.574
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.dcp' for cell 'pivot_ins/bram'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/Dusan/Desktop/projekat_radi/divider/project_7.gen/sources_1/ip/div_gen_0/div_gen_0.dcp' for cell 'pivot_ins/ip_core/div/div'
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2262.863 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 513 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+refresh_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:26 . Memory (MB): peak = 2262.863 ; gain = 94.418
+launch_runs synth_1 -jobs 4
+[Wed Jul  6 18:32:21 2022] Launched synth_1...
+Run output will be captured here: c:/users/dusan/desktop/projekat_radi/divider/ip_repo/edit_PIVOT_v1_0.runs/synth_1/runme.log
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-4963] div_gen_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:zybo:part0:2.0'
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-5898] Updating the required XPM macros from '' to 'XPM_MEMORY'
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-4963] div_gen_0 has board value specified. The packaged IP will be restricted to usage with board 'digilentinc.com:zybo:part0:2.0'
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+CRITICAL WARNING: [IP_Flow 19-626] File Group 'xilinx_vhdlbehavioralsimulation (VHDL Simulation)': verilogSource subcore file "simulation/blk_mem_gen_v8_4.v" is referenced from the pure language VHDL file group. Please consider changing the file group type to support mixed language sources.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0'
+create_project pivot C:/Users/Dusan/Desktop/projekat_radi/divider/pivot -part xc7z010clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+create_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2395.848 ; gain = 17.914
+set_property board_part digilentinc.com:zybo:part0:2.0 [current_project]
+current_project project_7
+current_project pivot
+set_property target_language VHDL [current_project]
+current_project project_7
+current_project pivot
+current_project project_7
+current_project pivot
+create_bd_design "pivot"
+Wrote  : <C:\Users\Dusan\Desktop\projekat_radi\divider\pivot\pivot.srcs\sources_1\bd\pivot\pivot.bd> 
+create_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2396.836 ; gain = 0.988
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+create_bd_cell: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2421.035 ; gain = 24.199
+endgroup
+set_property location {0.5 -31 -15} [get_bd_cells processing_system7_0]
+set_property  ip_repo_paths  C:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0 [current_project]
+current_project project_7
+current_project pivot
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0'.
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:PIVOT:1.0 PIVOT_0
+endgroup
+delete_bd_objs [get_bd_cells PIVOT_0]
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+apply_bd_automation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2498.059 ; gain = 3.820
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:PIVOT:1.0 PIVOT_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/PIVOT_0/S00_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins PIVOT_0/S00_AXI]
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Slave segment '/PIVOT_0/S00_AXI/S00_AXI_reg' is being assigned into address space '/processing_system7_0/Data' at <0x43C0_0000 [ 64K ]>.
+make_wrapper -files [get_files C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.srcs/sources_1/bd/pivot/pivot.bd] -top
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+Wrote  : <C:\Users\Dusan\Desktop\projekat_radi\divider\pivot\pivot.srcs\sources_1\bd\pivot\pivot.bd> 
+Wrote  : <C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.srcs/sources_1/bd/pivot/ui/bd_7fb29ac2.ui> 
+VHDL Output written to : C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/synth/pivot.vhd
+VHDL Output written to : C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/sim/pivot.vhd
+VHDL Output written to : C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/hdl/pivot_wrapper.vhd
+add_files -norecurse c:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/hdl/pivot_wrapper.vhd
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+launch_runs synth_1 -jobs 4
+INFO: [BD 41-1662] The design 'pivot.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\Dusan\Desktop\projekat_radi\divider\pivot\pivot.srcs\sources_1\bd\pivot\pivot.bd> 
+Wrote  : <C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.srcs/sources_1/bd/pivot/ui/bd_7fb29ac2.ui> 
+VHDL Output written to : C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/synth/pivot.vhd
+VHDL Output written to : C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/sim/pivot.vhd
+VHDL Output written to : C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/hdl/pivot_wrapper.vhd
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PIVOT_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/ip/pivot_auto_pc_0/pivot_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+Exporting to file C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/hw_handoff/pivot.hwh
+Generated Block Design Tcl file C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/hw_handoff/pivot_bd.tcl
+Generated Hardware Definition File C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/synth/pivot.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP pivot_PIVOT_0_1
+INFO: [IP_Flow 19-7066] Running IP cache check for IP pivot_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP pivot_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP pivot_rst_ps7_0_100M_0
+[Wed Jul  6 20:52:22 2022] Launched pivot_PIVOT_0_1_synth_1, pivot_processing_system7_0_0_synth_1, pivot_rst_ps7_0_100M_0_synth_1, pivot_auto_pc_0_synth_1...
+Run output will be captured here:
+pivot_PIVOT_0_1_synth_1: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/pivot_PIVOT_0_1_synth_1/runme.log
+pivot_processing_system7_0_0_synth_1: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/pivot_processing_system7_0_0_synth_1/runme.log
+pivot_rst_ps7_0_100M_0_synth_1: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/pivot_rst_ps7_0_100M_0_synth_1/runme.log
+pivot_auto_pc_0_synth_1: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/pivot_auto_pc_0_synth_1/runme.log
+[Wed Jul  6 20:52:22 2022] Launched synth_1...
+Run output will be captured here: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 2542.227 ; gain = 27.824
+close_bd_design [get_bd_designs pivot]
+launch_runs impl_1 -jobs 4
+[Wed Jul  6 21:00:30 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jul  6 21:07:02 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/impl_1/runme.log
+open_bd_design {C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.srcs/sources_1/bd/pivot/pivot.bd}
+Reading block design file <C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.srcs/sources_1/bd/pivot/pivot.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:user:PIVOT:1.0 - PIVOT_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Successfully read diagram <pivot> from block design file <C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.srcs/sources_1/bd/pivot/pivot.bd>
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+startgroup
+set_property -dict [list CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {120}] [get_bd_cells processing_system7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+endgroup
+reset_run pivot_processing_system7_0_0_synth_1
+reset_run synth_1
+save_bd_design
+Wrote  : <C:\Users\Dusan\Desktop\projekat_radi\divider\pivot\pivot.srcs\sources_1\bd\pivot\pivot.bd> 
+Wrote  : <C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.srcs/sources_1/bd/pivot/ui/bd_7fb29ac2.ui> 
+launch_runs impl_1 -jobs 4
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.073 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.034 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.03 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.082 . PS DDR interfaces might fail when entering negative DQS skew values. 
+Wrote  : <C:\Users\Dusan\Desktop\projekat_radi\divider\pivot\pivot.srcs\sources_1\bd\pivot\pivot.bd> 
+VHDL Output written to : c:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/synth/pivot.vhd
+VHDL Output written to : c:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/sim/pivot.vhd
+VHDL Output written to : c:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/hdl/pivot_wrapper.vhd
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/ip/pivot_auto_pc_0/pivot_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file c:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/hw_handoff/pivot.hwh
+Generated Block Design Tcl file c:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/hw_handoff/pivot_bd.tcl
+Generated Hardware Definition File c:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.gen/sources_1/bd/pivot/synth/pivot.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP pivot_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP pivot_processing_system7_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP pivot_rst_ps7_0_100M_0
+[Wed Jul  6 21:11:20 2022] Launched pivot_processing_system7_0_0_synth_1, pivot_rst_ps7_0_100M_0_synth_1, pivot_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+pivot_processing_system7_0_0_synth_1: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/pivot_processing_system7_0_0_synth_1/runme.log
+pivot_rst_ps7_0_100M_0_synth_1: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/pivot_rst_ps7_0_100M_0_synth_1/runme.log
+pivot_auto_pc_0_synth_1: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/pivot_auto_pc_0_synth_1/runme.log
+synth_1: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/synth_1/runme.log
+[Wed Jul  6 21:11:20 2022] Launched impl_1...
+Run output will be captured here: C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 2589.895 ; gain = 39.445
+current_project project_7
+close_project
+close_bd_design [get_bd_designs pivot]
+Wrote  : <C:/Users/Dusan/Desktop/projekat_radi/divider/pivot/pivot.srcs/sources_1/bd/pivot/ui/bd_7fb29ac2.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  6 21:23:15 2022...

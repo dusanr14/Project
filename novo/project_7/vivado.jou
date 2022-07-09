@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  7 10:37:18 2022
+# Process ID: 11860
+# Current directory: C:/Users/Dusan/Desktop/projekat_radi/divider/project_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9840 C:\Users\Dusan\Desktop\projekat_radi\divider\project_7\project_7.xpr
+# Log file: C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/vivado.log
+# Journal file: C:/Users/Dusan/Desktop/projekat_radi/divider/project_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/project_7.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.operand_sign {Unsigned} CONFIG.latency {55}] [get_ips div_gen_0]

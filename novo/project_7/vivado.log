@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jul  7 10:37:18 2022
+# Process ID: 11860
+# Current directory: C:/Users/Dusan/Desktop/projekat_radi/divider/project_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9840 C:\Users\Dusan\Desktop\projekat_radi\divider\project_7\project_7.xpr
+# Log file: C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/vivado.log
+# Journal file: C:/Users/Dusan/Desktop/projekat_radi/divider/project_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Dusan/Desktop/projekat_radi/divider/project_7/project_7.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Dusan/Desktop/projekat_radi/divider/ip_repo/PIVOT_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 1143.793 ; gain = 0.000
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.operand_sign {Unsigned} CONFIG.latency {55}] [get_ips div_gen_0]
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  7 10:39:09 2022...
